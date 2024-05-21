@@ -19,6 +19,8 @@ const Links = ({
     <a
       href={link}
       className="group rounded-lg px-5 py-4"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       {name ? (
         <h2
@@ -36,7 +38,7 @@ const Links = ({
           alt={altImage}
           width={100}
           height={100}
-          // style={{width: 150}}
+          style={{...imageStyle}}
         />
       )}
     </a>
