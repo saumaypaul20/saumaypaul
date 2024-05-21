@@ -5,7 +5,10 @@ type Link = {
   link?: string;
   image?: string;
   altImage?: string;
+  rel?: string;
   imageStyle?: {};
+  onClick?:any;
+  copyText?:string
 }
 
 const Links = ({
@@ -14,13 +17,17 @@ const Links = ({
   image = "",
   altImage = "alt image",
   imageStyle = {},
+  rel,
+  onClick,
+  copyText
 }: Link) => {
   return (
     <a
       href={link}
       className="group rounded-lg px-5 py-4"
-      rel="noopener noreferrer"
+      rel={rel}
       target="_blank"
+      onClick={(e)=>{e.preventDefault();onClick(copyText)}}
     >
       {name ? (
         <h2
