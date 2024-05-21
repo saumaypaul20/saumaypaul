@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,16 +18,86 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    color: #fff;
+    background: linear-gradient(-35deg, #000000, #21192e, #3b3644, #110017, #000000);
+   background-size: 400% 400%;
+
+   -webkit-animation: gradientMove 32s ease infinite;
+   -moz-animation: gradientMove 32s ease infinite;
+   animation: gradientMove 32s ease infinite;
+   font-family: "Montserrat", sans-serif !important;
+}
+*{
+  cursor: none !important;
+}
+
+@-webkit-keyframes gradientMove {
+   0%{background-position:0% 30%}
+   50%{background-position:100% 71%}
+   100%{background-position:0% 30%}
+}
+@-moz-keyframes gradientMove {
+   0%{background-position:0% 30%}
+   50%{background-position:100% 71%}
+   100%{background-position:0% 30%}
+}
+@keyframes gradientMove {
+   0%{background-position:0% 30%}
+   50%{background-position:100% 71%}
+   100%{background-position:0% 30%}
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.cursor-blur {
+  position: fixed; /* Changed to fixed to handle scrolling */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 251, 0, 0.714);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: overlay;
+  transition: transform 0.1s ease-out;
+  filter: color-mix(in lch, plum, pink);
+  cursor: none; /* Hide the default cursor */
+}
+
+.resume-button {
+  background-color: #fff; /* Green background */
+  border: none;
+  color: rgb(0, 0, 0); /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Display as inline-block */
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margins */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.2s; /* Animation for hover effect */
+  font-weight: 700;
+  
+}
+
+.resume-button:hover {
+  background-color: #ea641b; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.resume-button:active {
+  background-color: #fff; /* Even darker green on click */
+  transform: scale(0.95); /* Slightly smaller on click */
 }
