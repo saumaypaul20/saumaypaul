@@ -27,7 +27,7 @@ const Links = ({
       className="group rounded-lg px-5 py-4"
       rel={rel}
       target="_blank"
-      onClick={(e)=>{e.preventDefault();onClick(copyText)}}
+      onClick={(e)=>{if(onClick){e.preventDefault();onClick(copyText)}}}
     >
       {name ? (
         <h2
