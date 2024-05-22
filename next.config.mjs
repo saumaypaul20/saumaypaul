@@ -2,7 +2,10 @@
 const nextConfig = {
     basePath: "/saumaypaul",
     output: "export",
-    reactStrictMode: true
+    reactStrictMode: true,
+    images:{
+        path:"/saumaypaul"
+    }
 };
 
 export default nextConfig;
