@@ -14,7 +14,7 @@ const Resume = () => {
         <div className="flex flex-col items-center justify-center text-center">
             <button className="resume-button" onClick={handleDownload}>
                     <Image
-                src={'/assets/icons/cv.svg'}
+                src={'./assets/icons/cv.svg'}
                 alt={'file icon'}
                 width={100}
                 height={100}

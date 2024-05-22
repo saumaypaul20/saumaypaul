@@ -58,11 +58,11 @@ const Home = () => {
       </div>
 
       <div className="flex flex-row items-center justify-center mt-20 lg:text-center">
-        <Links image="/assets/logos/react-typescript.png" />
-        <Links image="/assets/logos/react-native.png" />
-        <Links image="/assets/logos/redux.png" />
-        <Links image="/assets/logos/htmlcssjs.png"/>
-        <Links image="/assets/logos/node.png" />
+        <Links image="./assets/logos/react-typescript.png" />
+        <Links image="./assets/logos/react-native.png" />
+        <Links image="./assets/logos/redux.png" />
+        <Links image="./assets/logos/htmlcssjs.png"/>
+        <Links image="./assets/logos/node.png" />
         
       </div>
       

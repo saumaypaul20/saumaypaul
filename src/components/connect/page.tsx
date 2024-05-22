@@ -22,11 +22,11 @@ const Connect = () => {
 
           <div className="flex flex-column pt-5 mt-5">
       
-           <Links image="/assets/icons/email.svg" link={""}imageStyle={{width:50, height:50}} 
+           <Links image="./assets/icons/email.svg" link={""}imageStyle={{width:50, height:50}} 
            onClick={copyToClipboard} copyText="saumaypaul20@gmail.com"/>
            
-            <Links image="/assets/icons/git.svg" link="http://www.github.com/saumaypaul20/"  rel="noopener noreferrer" imageStyle={{width:50, height:50}}/>
-            <Links image="/assets/icons/linkedin.svg" link="http://www.linkedin.com/in/saumaypaul/"  rel="noopener noreferrer" imageStyle={{width:50, height:50}}/>
+            <Links image="./assets/icons/git.svg" link="http://www.github.com/saumaypaul20/"  rel="noopener noreferrer" imageStyle={{width:50, height:50}}/>
+            <Links image="./assets/icons/linkedin.svg" link="http://www.linkedin.com/in/saumaypaul/"  rel="noopener noreferrer" imageStyle={{width:50, height:50}}/>
           </div>
          
         </div>
