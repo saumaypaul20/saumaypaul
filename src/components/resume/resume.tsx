@@ -3,7 +3,7 @@ import Image from "../../../node_modules/next/image";
 const Resume = () => {
 
     const handleDownload = () => {
-        const resumeUrl = '/assets/doc/saumay_ats_latest.pdf';
+        const resumeUrl = './assets/doc/saumay_ats_latest.pdf';
         window.open(resumeUrl, '_blank');
       };
 
