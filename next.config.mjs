@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/saumaypaul",
     output: "export",
     reactStrictMode: true,
-    images:{
-        path:"/saumaypaul"
+    images: {
+        path: "/",
+        unoptimized: true
     }
 };
 
